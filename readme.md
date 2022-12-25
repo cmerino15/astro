@@ -6,7 +6,7 @@
 
 # start venv
 
-`scripts\activate`
+`env\scripts\activate` // note the \
 
 # check installed modules
 
@@ -14,12 +14,13 @@
 
 # install the requirements from requirements.txt
 
-`pip -m pip install -r requirements.txt`
+`pip install -r requirements.txt`
 
 # then run astro.py
 
 `astro.py`
 
-# on exit delete venv
+# on exit deactivate venv and delete venv
 
-`rmdir env \s` 
+`deactivate`
+`rmdir env /s` // or alternatively `rmdir project_dir /s`
